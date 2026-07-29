@@ -1,11 +1,42 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html>
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<link rel="shortcut icon" href="https://storage.googleapis.com/red_eye_bit_studios-public/www/redeyebit-icon.svg" type="image/x-icon">
+	<script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="index.css">
+	<script src="index.js"></script>
+	<title>RedEyeBit Studios </title>
 </head>
 <body>
-	Work in progress.
+	<div class="main_bar">
+		<div class="main_bar-image" onclick="setContentPath('src/home.html')">
+			
+		</div>
+		<div class="main_bar-content">
+			<div class="main_bar-entry" id="home:PRODUCTS">
+				
+			</div>
+			<div class="main_bar-entry" id="home:GAMES">
+				
+			</div>
+			<div class="main_bar-entry" id="home:SUPPORT">
+				
+			</div>
+			<div class="main_bar-entry" id="home:CONTACT" onclick="setContentPath('src/contact.html')">
+				
+			</div>
+		</div>
+	</div>
+	<div id="content">
+
+	</div>
+	<div class="footer">
+		© 2026 RedEyeBit Studios
+	</div>
+	<script>
+		loadContent();
+	</script>
 </body>
 </html>

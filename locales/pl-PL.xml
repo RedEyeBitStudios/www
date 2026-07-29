@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:home="0x1"
+>
+	<home:PRODUCTS>Redona Engine</home:PRODUCTS>
+	<home:GAMES>Portfolio</home:GAMES>
+	<home:SUPPORT>Wsparcie</home:SUPPORT>
+	<home:CONTACT>Kontakt</home:CONTACT>
+	<home:TITLE1>RedEyeBit Studios prezentuje</home:TITLE1>
+	<home:TITLE2>Nową jakość oprogramowania w branży gier komputerowych</home:TITLE2>
+	<home:SUBTITLE3>Autorski silnik</home:SUBTITLE3>
+	<home:TITLE3>Redona Engine</home:TITLE3>
+	<home:DESCRIPTION3>Został stworzony z myślą o tworzeniu aplikacji i gier komputerowych o wysokiej wydajności. Jako natywny dla systemów GNU/Linux silnik z naszym podejściem do planowania kodu pozwala na produkcję gier w bardzo stabilnym środowisku. 
+		Ponadto wyróżnia się niskimi wymaganiami sprzętowymi, przez co do produkcji nie potrzebujesz sprzętu za horendalne pieniądze.</home:DESCRIPTION3>
+	<home:TITLE4>Poczuj lekkość światów 3D</home:TITLE4>
+	<home:TITLE5>"Te założenia są niemożliwe do wykonania."</home:TITLE5>
+	<home:TITLE6>Nasza filozofia</home:TITLE6>
+	<home:TITLE7>Dlaczego RedEyeBit Studios?</home:TITLE7>
+	<home:TITLE8>Jesteśmy studiem tworzącym zarówno silnik do gier komputerowych jak i same gry komputerowe. Naszym głównym celem jest przywrócenie dawnej jakości gier, która umożliwia granie na szerokiej gamie sprzętu komputerowego bez dziwnych błędów i awarii. 
+		Ponadto dokładamy swoją cegiełkę do mistycznego roku GNU/Linux, dostarczając pełne natywne wsparcie dla tej platformy.</home:TITLE8>
+</root>
