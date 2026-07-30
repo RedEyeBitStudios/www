@@ -6,10 +6,12 @@
 	from
 	{
 		border-color: inherit;
+		color: inherit;
 	}
 	to
 	{
 		border-color: #c40000ff;
+		color: white;
 	}
 }
 
@@ -22,7 +24,7 @@ body
 	scrollbar-width: thin;
 	font-family: 'Spline Sans', sans-serif;
 	font-weight: 100;
-	color: #efefef;
+	color: #b1b1b1;
 	height: max-content;
 
 	-webkit-font-smoothing: antialiased;
@@ -94,6 +96,7 @@ body
 	margin-top: 150px;
 	height: 50px;
 	background-color: #c40000;
+	color: white;
 	text-align: center;
 	line-height: 50px;
 }
