@@ -83,8 +83,9 @@ body
 }
 #content
 {
-	color: inherit;
 	width: 100%;
+	float: left;
+	min-height: calc(100vh - 258px);
 }
 .footer
 {

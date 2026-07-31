@@ -12,7 +12,7 @@ const locale_dir = function()
 	}
 }();
 //let global_path = "src/home.html";
-let global_path = "data/articles/30072026-0.html";
+//let global_path = "data/articles/30072026-0.html";
 {
 	const message = locale_dir.includes("pl") ? "Niewspierana przeglądarka. Strona może nie zachowywać się poprawnie." : "Unsupported browser. Page may not behave properly.";
 	const ua = navigator.userAgent;
@@ -32,13 +32,13 @@ async function loadLocale()
 		$(document.getElementById(id_name)).text($(this).text());
 	})
 }
-async function loadContent()
+async function loadContent(path)
 {
-	$("#content").load(global_path);
+	$("#content").load(path);
+	
 	await loadLocale();
 }
 async function setContentPath(path)
 {
-	global_path = path;
-	await loadContent();
+	await loadContent(path);
 }
