@@ -16,6 +16,8 @@
 	<home:TITLE5>"Te założenia są niemożliwe do wykonania."</home:TITLE5>
 	<home:TITLE6>Nasza filozofia</home:TITLE6>
 	<home:TITLE7>Dlaczego RedEyeBit Studios?</home:TITLE7>
-	<home:TITLE8>Jesteśmy studiem tworzącym zarówno silnik do gier komputerowych jak i same gry komputerowe. Naszym głównym celem jest przywrócenie dawnej jakości gier, która umożliwia granie na szerokiej gamie sprzętu komputerowego bez dziwnych błędów i awarii. 
+	<home:TITLE8>Jesteśmy studiem tworzącym zarówno silnik do gier komputerowych, jak i same gry komputerowe. Naszym głównym celem jest przywrócenie dawnej jakości gier, która umożliwia granie na szerokiej gamie sprzętu komputerowego bez dziwnych błędów i awarii. 
 		Ponadto dokładamy swoją cegiełkę do mistycznego roku GNU/Linux, dostarczając pełne natywne wsparcie dla tej platformy.</home:TITLE8>
+	<home:NEWS_TITLE>Aktualności</home:NEWS_TITLE>
+	<home:ARTICLE_ENTER>Kliknij by sprawdzić</home:ARTICLE_ENTER>
 </root>
