@@ -30,5 +30,12 @@
 	<redona_engine:TEXT5>niskie wymagania sprzętowe</redona_engine:TEXT5>
 	<redona_engine:TEXT6>rozszerzalność za pomocą wtyczek</redona_engine:TEXT6>
 	<redona_engine:TEXT7>lub nowsze</redona_engine:TEXT7>
-	
+	<redona_engine:TEXT8>lub nowszy</redona_engine:TEXT8>
+	<redona_engine:TEXT9>lub nowszy</redona_engine:TEXT9>
+	<redona_engine:REQ1>Architektura</redona_engine:REQ1>
+	<redona_engine:REQ2>z rozszerzeniami</redona_engine:REQ2>
+	<redona_engine:REQ3>Wolna pamięć</redona_engine:REQ3>
+	<redona_engine:REQ4>Z obsługą API Vulkan minimum w wersji 1.1 z rozszerzeniami</redona_engine:REQ4>
+	<redona_engine:REQ5>Wolna pamięć</redona_engine:REQ5>
+	<redona_engine:REQ6>Przestrzeń dyskowa</redona_engine:REQ6>
 </root>
