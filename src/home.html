@@ -5,19 +5,47 @@
 		height: 250px;
 		float: left;
 	}
+
+	.image
+	{
+		display: block;
+		float: left;
+	}
+	.texts
+	{
+		width: 40%;
+		margin-left: 5%;
+		margin-right: 5%;
+		float: left;
+	}
+
+	@media screen and (width < 1000px)
+	{
+		.image
+		{
+			display: none;
+		}
+		.texts
+		{
+			width: 90%;
+			margin-left: 5%;
+			margin-right: 5%;
+		}
+	}
 </style>
 <script src="articles.js"></script>
 <div style="width: 100%; color: #3c3c3c; font-family: 'Space Grotesk'; font-size: 34px; font-weight: 900; margin-top: 30px; float: left;">
-	<div style="float: left; width: 50%; text-align: center;">
-		<div style="margin-left: 35%; margin-top: 80px; text-align: left;" id="home:TITLE1">
+	<div style="text-align: center;" class="texts">
+		<div style="margin-top: 80px;" id="home:TITLE1">
 			
 		</div>
-		<div style="margin-left: 35%; margin-top: 30px; color: #c40000; font-size: 25px; font-style: italic;" id="home:TITLE2">
+		<div style="margin-top: 30px; color: #c40000; font-size: 25px; font-style: italic;" id="home:TITLE2">
 			
 		</div>
 	</div>
-	<div style="float: left; width: 40%; text-align: center;">
-		<img src="https://storage.googleapis.com/red_eye_bit_studios-public/www/redeyebit-logo-1920.png" style="width: 60%; margin-top: 80px; margin-left: 30%;">
+	<div style="margin-left: 5%; width: 40%; text-align: center; height: 180px; margin-top: 40px;" class="image">
+		<div style="float: left; background-image: url('https://storage.googleapis.com/red_eye_bit_studios-public/www/redeyebit-logo-1920.png'); width: 100%; height: 100%; background-repeat: no-repeat;
+		background-position: center; background-size: contain;"></div>
 	</div>
 </div>
 <div style="width: 100%; float: left; margin-top: 130px; padding-top: 100px; padding-bottom: 120px; background-color: #202020; border-color: #c40000; border-style: solid; border-width: 2px 0px 0px 0px;">
@@ -28,14 +56,15 @@
 	</div>
 </div>
 <div style="width: 100%; color: #3c3c3c; font-family: 'Space Grotesk'; font-size: 34px; font-weight: 900; margin-top: 100px; float: left; margin-bottom: 80px; text-align: center;">
-	<div style="float: left; width: 50%;">
-		<img src="https://storage.googleapis.com/red_eye_bit_studios-public/www/redona-engine-full_logo-1280x640.png" style="width: 60%; margin-top: 70px;">
+	<div style="margin-left: 5%; margin-right: 5%; width: 40%; text-align: center; height: 180px; margin-top: 40px;" class="image">
+		<div style="float: left; background-image: url('https://storage.googleapis.com/red_eye_bit_studios-public/www/redona-engine-full_logo-1280x640.png'); width: 100%; height: 100%; background-repeat: no-repeat;
+		background-position: center; background-size: contain;"></div>
 	</div>
-	<div style="float: left; width: 40%; text-align: left;">
-		<div style="margin-left: 15%; margin-top: 80px; color: #3c3c3c; font-size: 25px;" id="home:TITLE4">
+	<div style="text-align: center;" class="texts">
+		<div style="margin-top: 80px; color: #3c3c3c; font-size: 25px;" id="home:TITLE4">
 			
 		</div>
-		<div style="margin-left: 15%; margin-top: 30px; color: #c40000; font-size: 25px; font-style: italic;" id="home:TITLE5">
+		<div style="margin-top: 30px; color: #c40000; font-size: 25px; font-style: italic;" id="home:TITLE5">
 			
 		</div>
 	</div>
@@ -56,7 +85,8 @@
 	.entry
 	{
 		flex: 0 0 auto;
-		width: 30%;
+		max-width: 350px;
+		width: 100%;
 		height: 150px;
 		background-color: white;
 		border-color: #ff000000;
@@ -76,7 +106,7 @@
 	{
 		margin-left: 5%;
 		margin-top: 5%;
-		width: 70%;
+		width: 90%;
 		float: left;
 		font-size: 14px;
 		color: #5c5c5c;
@@ -84,7 +114,7 @@
 	.entry-title
 	{
 		margin-left: 5%;
-		width: 70%;
+		width: 90%;
 		float: left;
 		font-weight: 700;
 		font-size: 22px;
@@ -93,7 +123,7 @@
 	{
 		margin-left: 5%;
 		margin-top: 5%;
-		width: 70%;
+		width: 90%;
 		float: left;
 		font-size: 16px;
 		color: #c40000;
@@ -109,7 +139,7 @@
 		</script>
 	</div>
 </div>
-<div style="width: 100%; float: left; margin-top: 180px;">
+<div style="width: 100%; float: left; margin-top: 180px; margin-bottom: 160px;">
 	<div style="width: 100%; text-align: center; color: #ff0000; font-weight: 200; font-size: 20px; margin-bottom: 10px;" id="home:TITLE6"></div>
 	<div style="width: 100%; text-align: center; color: #3c3c3c; font-weight: 900; font-size: 36px; font-family: 'Space Grotesk';" id="home:TITLE7"></div>
 	<div style="margin: auto 20% auto 20%; width: 60%; text-align: center; color: #000000; font-weight: 100; font-size: 18px; margin-top: 20px;" id="home:TITLE8">
