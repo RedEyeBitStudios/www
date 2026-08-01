@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root xmlns:home="0x1" redona_engine="0x2"
+<root xmlns:home="0x1" xmlns:redona_engine="0x2"
 >
 	<home:PRODUCTS>Redona Engine</home:PRODUCTS>
 	<home:GAMES>Portfolio</home:GAMES>
@@ -20,4 +20,15 @@
 		Ponadto dokładamy swoją cegiełkę do mistycznego roku GNU/Linux, dostarczając pełne natywne wsparcie dla tej platformy.</home:TITLE8>
 	<home:NEWS_TITLE>Aktualności</home:NEWS_TITLE>
 	<home:ARTICLE_ENTER>Kliknij by sprawdzić</home:ARTICLE_ENTER>
+	<redona_engine:DESCRIPTION1>Wiele silników do produkcji gier oferuje takie same lub więcej funkcji względem Redona Engine, ale nie są idealne. 
+	Głównymi wadami są duża ilość bloatu, mało intuicyjny interfejs oraz brak natywnego wsparcia dla systemów GNU/Linux.</redona_engine:DESCRIPTION1>
+	<redona_engine:SUBTITLE1>Redona wypełnia tę pustkę</redona_engine:SUBTITLE1>
+	<redona_engine:TEXT1>wysoka wydajność</redona_engine:TEXT1>
+	<redona_engine:TEXT2>brak niepotrzebnych narzędzi</redona_engine:TEXT2>
+	<redona_engine:TEXT3>przystępny interfejs użytkownika</redona_engine:TEXT3>
+	<redona_engine:TEXT4>natywne wsparcie systemów GNU/Linux</redona_engine:TEXT4>
+	<redona_engine:TEXT5>niskie wymagania sprzętowe</redona_engine:TEXT5>
+	<redona_engine:TEXT6>rozszerzalność za pomocą wtyczek</redona_engine:TEXT6>
+	<redona_engine:TEXT7>lub nowsze</redona_engine:TEXT7>
+	
 </root>

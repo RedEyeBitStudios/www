@@ -88,17 +88,16 @@
 	<div class="background_image_generic" id="redona_logo"></div>
 </div>
 <div id="desc">
-	<span style="float: left;">Wiele silników do produkcji gier oferuje takie same lub więcej funkcji względem Redona Engine, ale nie są idealne. 
-	Głównymi wadami są duża ilość bloatu, mało intuicyjny interfejs oraz brak natywnego wsparcia dla systemów GNU/Linux.</span><br />
+	<span style="float: left;" id="redona_engine:DESCRIPTION1"></span><br />
 	<div id="pros">
-		<span style="width: 100%; font-family: 'Space Grotesk'; font-weight: 700; font-size: 21px; margin-top: 20px; float: left;">Redona wypełnia tę pustkę</span><br /><br />
+		<span style="width: 100%; font-family: 'Space Grotesk'; font-weight: 700; font-size: 21px; margin-top: 20px; float: left;" id="redona_engine:SUBTITLE1"></span><br /><br />
 		<ul style="float: left;">
-			<li>wysoka wydajność</li>
-			<li>brak niepotrzebnych narzędzi</li>
-			<li>przystępny interfejs użytkownika</li>
-			<li>natywne wsparcie systemów GNU/Linux</li>
-			<li>niskie wymagania sprzętowe</li>
-			<li>rozszerzalność za pomocą wtyczek</li>
+			<li id="redona_engine:TEXT1"></li>
+			<li id="redona_engine:TEXT2"></li>
+			<li id="redona_engine:TEXT3"></li>
+			<li id="redona_engine:TEXT4"></li>
+			<li id="redona_engine:TEXT5"></li>
+			<li id="redona_engine:TEXT6"></li>
 		</ul>
 	</div>
 	<style>
@@ -114,7 +113,7 @@
 			padding: 10px;
 			margin-right: 15px;
 			float: left;
-			margin-left: calc((100% - 40px) / 2);
+			
 		}
 		.os_entry-text
 		{
@@ -129,6 +128,10 @@
 				text-align: center;
 				width: 100%;
 			}
+			.os_entry-img
+			{
+				margin-left: calc((100% - 40px) / 2);
+			}
 		}
 	</style>
 	<div id="pros">
@@ -136,7 +139,7 @@
 		<div class="os_entry">
 			<img src="https://storage.googleapis.com/red_eye_bit_studios-public/www/linux-logo-512x512.png" alt="" class="os_entry-img">
 			<div class="os_entry-text">
-				GNU/Linux; glibc 2.39 lub nowsze
+				GNU/Linux; glibc 2.39 <span id="redona_engine:TEXT7"></span>
 			</div>
 		</div>
 		<div class="os_entry">
