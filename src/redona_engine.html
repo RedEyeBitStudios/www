@@ -1,0 +1,280 @@
+<style>
+	#redona_logo
+	{
+		background-image: url('https://storage.googleapis.com/red_eye_bit_studios-public/www/redona-engine-full_logo-1280x640.png');
+		margin-left: 10%;
+		width: 80%;
+		
+		height: 150px;
+	}
+	#requirements
+	{
+		float: left;
+		padding: 60px 10% 60px 10%;
+		width: 80%;
+		background-color: #3c3c3c;
+		color: #b1b1b1;
+		margin-top: 70px;
+		text-align: center;
+	}
+	table
+	{
+		margin: auto;
+	}
+	table, tr
+	{
+		border-color: #b1b1b1;
+		border-style: solid;
+		border-width: 0px 0px 2px 0px;
+		border-collapse: collapse;
+		text-align: left;	
+	}
+	td, th
+	{
+		float: left;
+		margin: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+		width: 450px;
+	}
+	th
+	{
+		font-weight: 700;
+		width: 200px;
+	}
+	#desc
+	{
+		margin-left: 10%;
+		margin-right: 10%;
+		width: 80%;
+		float: left;
+		margin-top: 80px;
+		color: #3c3c3c;
+	}
+	#pros
+	{
+		float: left;
+		width: 50%;
+	}
+	@keyframes download_button_animation
+	{
+		from
+		{
+			background-color: inherit;
+			color: #b1b1b1;
+		}
+		to
+		{
+			background-color: #c40000;
+			color: white;
+		}
+	}
+	.download_category
+	{
+		width: 25%;
+		float: left;
+		border-color: #b1b1b1;
+		border-style: solid;
+		border-width: 0px 0px 0px 2px;
+		border-collapse: collapse;
+	}
+	.download_button, .download_button:visited
+	{
+		background-color: inherit;		
+		color: #b1b1b1;
+		font-weight: 500;
+		cursor: pointer;
+		text-decoration: none;
+	}
+	.download_button:hover
+	{
+		animation-name: download_button_animation;
+		animation-duration: 500ms;
+		animation-fill-mode: forwards;
+	}
+	@media screen and (width < 1000px)
+	{
+		#redona_logo
+		{
+			height: 50px;
+		}
+		#pros
+		{
+			width: 100%;
+		}
+		#requirements
+		{
+			width: 100%;
+			padding: 10% 0px 10% 0px;
+		}
+		table, tr
+		{
+			border: none;
+		}
+		td, th
+		{
+			width: 100%;
+			margin: 10px 0px 0px 0px;
+		}
+	}
+	#downloads
+	{
+		display: block;
+	}
+</style>
+
+
+<div style="width: 100%; float: left; text-align: center; margin-top: 80px; height: fit-content;">
+	<div class="background_image_generic" id="redona_logo"></div>
+</div>
+<div id="desc">
+	<span style="float: left;" id="redona_engine:DESCRIPTION1"></span><br />
+	<div id="pros">
+		<span style="width: 100%; font-family: 'Space Grotesk'; font-weight: 700; font-size: 21px; margin-top: 20px; float: left;" id="redona_engine:SUBTITLE1"></span><br /><br />
+		<ul style="float: left;">
+			<li id="redona_engine:TEXT1"></li>
+			<li id="redona_engine:TEXT2"></li>
+			<li id="redona_engine:TEXT3"></li>
+			<li id="redona_engine:TEXT4"></li>
+			<li id="redona_engine:TEXT5"></li>
+			<li id="redona_engine:TEXT6"></li>
+		</ul>
+	</div>
+	<style>
+		.os_entry
+		{
+			width: 100%;
+			float: left; 
+			margin-top: 10px;
+		}
+		.os_entry-img
+		{
+			width: 40px;
+			padding: 10px;
+			margin-right: 15px;
+			float: left;
+			
+		}
+		.os_entry-text
+		{
+			float: left;
+			line-height: 55px;
+		}
+		@media screen and (width < 1000px)
+		{
+			.os_entry-text
+			{
+				float: left;
+				text-align: center;
+				width: 100%;
+			}
+			.os_entry-img
+			{
+				margin-left: calc((100% - 40px) / 2);
+			}
+			#downloads
+			{
+				display: none;
+			}
+		}
+	</style>
+	<div id="pros">
+		<div style="width: 100%; font-family: 'Space Grotesk'; font-weight: 700; font-size: 21px; margin-top: 20px; float: left; margin-bottom: 20px;">Obsługiwane systemy operacyjne</div>
+		<div class="os_entry">
+			<img src="https://storage.googleapis.com/red_eye_bit_studios-public/www/linux-logo-512x512.png" alt="" class="os_entry-img">
+			<div class="os_entry-text">
+				GNU/Linux; glibc 2.39 <span id="redona_engine:TEXT7"></span>
+			</div>
+		</div>
+		<div class="os_entry">
+			<img src="https://storage.googleapis.com/red_eye_bit_studios-public/www/windows-logo-512x512.png" alt="" class="os_entry-img">
+			<div class="os_entry-text">
+				Microsoft Windows 10.19045 <span id="redona_engine:TEXT8"></span>
+			</div>
+		</div>
+		<div class="os_entry">
+			<img src="https://storage.googleapis.com/red_eye_bit_studios-public/www/android-logo-512x512.png" alt="" class="os_entry-img">
+			<div class="os_entry-text">
+				Android 10.0 <span id="redona_engine:TEXT9"></span>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="requirements">
+	<div style="width: 100%; font-family: 'Space Grotesk'; font-weight: 700; font-size: 21px; margin-bottom: 20px; text-align: center; color: white;">Wymagania sprzętowe</div>
+
+	<table>
+		<tr>
+			<th><span id="redona_engine:REQ1"></span> CPU</th>
+			<td>
+				ARMv8-A, x86_64 <span id="redona_engine:REQ2"></span>:
+				<div style="margin-left: 40px;">
+					<li>SSE 4.2</li>
+					<li>F16C</li>
+					<li>AVX</li>
+					<li>FMA</li>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<th><span id="redona_engine:REQ3"></span> RAM</th>
+			<td>512MB</td>
+		</tr>
+		<tr>
+			<th>GPU</th>
+			<td>
+				<span id="redona_engine:REQ4"></span>:
+				<div style="margin-left: 40px;">
+					<li>VK_KHR_buffer_device_address</li>
+					<li>VK_KHR_create_renderpass2</li>
+					<li>VK_KHR_shader_float16_int8</li>
+					<li>VK_KHR_16bit_storage</li>
+					<li>VK_KHR_shader_draw_parameters</li>
+					<li>VK_KHR_separate_depth_stencil_layouts</li>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<th><span id="redona_engine:REQ5"></span> VRAM</th>
+			<td>128MB</td>
+		</tr>
+		<tr>
+			<th><span id="redona_engine:REQ6"></span></th>
+			<td>N/A</td>
+		</tr>
+	</table>
+</div>
+<div style="margin-top: 70px; width: 100%; float: left; color: #3c3c3c; margin-bottom: 70px;" id="downloads">
+	<div style="float: left; width: 100%; font-family: 'Space Grotesk'; font-weight: 700; font-size: 21px; margin-bottom: 40px; text-align: center;">Pobieranie</div>
+	<div style="float: left; width: 80%; margin-left: 10%; display: flex; text-align: center; background-color: #3c3c3c; padding-top: 20px; ">
+		
+			<div style="width: 50%; float: left; height: 120px; line-height: 120px;" class="download_button">
+				<a href="https://github.com/RedEyeBitStudios/redona" target="_blank" style="color: inherit; text-decoration: none;">
+					GitHub
+				</a>
+			</div>
+		<div style="width: 50%;">
+			<img src="https://storage.googleapis.com/red_eye_bit_studios-public/www/linux-logo-512x512.png" alt="" style="float: left; width: 40px; margin-left: calc((100% - 40px) / 2); padding-bottom: 20px;">
+			<div style="float: left; width: 50%; height: 60px; line-height: 60px;" class="download_button">
+				x86_64
+			</div>
+			<div style="float: left; width: 50%; height: 60px; line-height: 60px;" class="download_button">
+				aarch64
+			</div>
+		</div>
+		<!--
+		<div class="download_category">
+			<img src="https://storage.googleapis.com/red_eye_bit_studios-public/www/windows-logo-512x512.png" alt="" style="float: left; width: 40px; margin-left: calc((100% - 40px) / 2); padding-bottom: 20px;">
+			<div style="float: left; width: 100%; height: 60px; line-height: 60px;" class="download_button">
+				x86_64
+			</div>
+		</div>
+		<div class="download_category">
+			<img src="https://storage.googleapis.com/red_eye_bit_studios-public/www/android-logo-512x512.png" alt="" style="float: left; width: 40px; margin-left: calc((100% - 40px) / 2); padding-bottom: 20px;">
+			<div style="float: left; width: 100%; height: 60px; line-height: 60px;" class="download_button">
+				aarch64
+			</div>
+		</div>
+		-->
+	</div>
+</div>

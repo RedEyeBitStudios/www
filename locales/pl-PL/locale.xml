@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:home="0x1" xmlns:redona_engine="0x2"
+>
+	<home:PRODUCTS>Redona Engine</home:PRODUCTS>
+	<home:GAMES>Portfolio</home:GAMES>
+	<home:SUPPORT>Wsparcie</home:SUPPORT>
+	<home:CONTACT>Kontakt</home:CONTACT>
+	<home:TITLE1>RedEyeBit Studios prezentuje</home:TITLE1>
+	<home:TITLE2>Nową jakość oprogramowania w branży gier komputerowych</home:TITLE2>
+	<home:SUBTITLE3>Autorski silnik</home:SUBTITLE3>
+	<home:TITLE3>Redona Engine</home:TITLE3>
+	<home:DESCRIPTION3>Został zaprojektowany z myślą o produkcji aplikacji i gier komputerowych o wysokiej wydajności. 
+		Jako silnik natywny dla systemów GNU/Linux – dzięki naszemu podejściu do planowania kodu – pozwala na produkcję gier w bardzo stabilnym środowisku. 
+		Ponadto wyróżnia się niskimi wymaganiami sprzętowymi, co sprawia, że do produkcji nie potrzebujesz sprzętu za horrendalne pieniądze.</home:DESCRIPTION3>
+	<home:TITLE4>Poczuj lekkość światów 3D</home:TITLE4>
+	<home:TITLE5>"Te założenia są niemożliwe do wykonania."</home:TITLE5>
+	<home:TITLE6>Nasza filozofia</home:TITLE6>
+	<home:TITLE7>Dlaczego RedEyeBit Studios?</home:TITLE7>
+	<home:TITLE8>Jesteśmy studiem tworzącym zarówno silnik do gier komputerowych, jak i same gry komputerowe. Naszym głównym celem jest przywrócenie dawnej jakości gier, która umożliwia granie na szerokiej gamie sprzętu komputerowego bez dziwnych błędów i awarii. 
+		Ponadto dokładamy swoją cegiełkę do mistycznego roku GNU/Linux, dostarczając pełne natywne wsparcie dla tej platformy.</home:TITLE8>
+	<home:NEWS_TITLE>Aktualności</home:NEWS_TITLE>
+	<home:ARTICLE_ENTER>Kliknij by sprawdzić</home:ARTICLE_ENTER>
+	<redona_engine:DESCRIPTION1>Wiele silników do produkcji gier oferuje takie same lub więcej funkcji względem Redona Engine, ale nie są idealne. 
+	Głównymi wadami są duża ilość bloatu, mało intuicyjny interfejs oraz brak natywnego wsparcia dla systemów GNU/Linux.</redona_engine:DESCRIPTION1>
+	<redona_engine:SUBTITLE1>Redona wypełnia tę pustkę</redona_engine:SUBTITLE1>
+	<redona_engine:TEXT1>wysoka wydajność</redona_engine:TEXT1>
+	<redona_engine:TEXT2>brak niepotrzebnych narzędzi</redona_engine:TEXT2>
+	<redona_engine:TEXT3>przystępny interfejs użytkownika</redona_engine:TEXT3>
+	<redona_engine:TEXT4>natywne wsparcie systemów GNU/Linux</redona_engine:TEXT4>
+	<redona_engine:TEXT5>niskie wymagania sprzętowe</redona_engine:TEXT5>
+	<redona_engine:TEXT6>rozszerzalność za pomocą wtyczek</redona_engine:TEXT6>
+	<redona_engine:TEXT7>lub nowsze</redona_engine:TEXT7>
+	<redona_engine:TEXT8>lub nowszy</redona_engine:TEXT8>
+	<redona_engine:TEXT9>lub nowszy</redona_engine:TEXT9>
+	<redona_engine:REQ1>Architektura</redona_engine:REQ1>
+	<redona_engine:REQ2>z rozszerzeniami</redona_engine:REQ2>
+	<redona_engine:REQ3>Wolna pamięć</redona_engine:REQ3>
+	<redona_engine:REQ4>Z obsługą API Vulkan minimum w wersji 1.1 z rozszerzeniami</redona_engine:REQ4>
+	<redona_engine:REQ5>Wolna pamięć</redona_engine:REQ5>
+	<redona_engine:REQ6>Przestrzeń dyskowa</redona_engine:REQ6>
+</root>

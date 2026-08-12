@@ -1,0 +1,156 @@
+@keyframes bar_animation
+{
+	from
+	{
+		border-color: inherit;
+		color: inherit;
+	}
+	to
+	{
+		border-color: #c40000ff;
+		color: white;
+	}
+}
+body
+{
+	margin: 0px;
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	scrollbar-width: thin;
+	font-family: 'Spline Sans', sans-serif;
+	font-weight: 100;
+	color: #b1b1b1;
+	height: max-content;
+
+	-webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+.main_bar
+{
+	float:left; 
+	width: 100%; 
+	height: fit-content;
+	box-shadow: 0px 0px 20px rgb(102, 102, 102);
+
+	background-color: #3c3c3c;
+}
+.background_image_generic
+{
+	background-size: contain; 
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.main_bar-image
+{
+	padding-left: 8px;
+	padding-right: 8px;
+	background-size: contain; 
+	background-repeat: no-repeat;
+	background-position: center;
+	float: left;
+	background-image: url('https://storage.googleapis.com/red_eye_bit_studios-public/www/redeyebit-icon.svg');
+	width: 58px;
+	height: 58px;
+	vertical-align: middle;
+	background-color: white;
+	cursor: pointer;
+}
+.main_bar-content
+{
+	float: left;
+	width: calc(100% - 74px);
+	height: 50px;
+	
+	border-style: solid;
+	border-color: #c4000000;
+	border-width: 0px 0px 8px 0px;
+}
+.main_bar-entry
+{
+	background-color: inherit;
+	color: inherit;
+	text-align: center;
+	line-height: 57px;
+	font-size: 17px;
+	height: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
+	display: inline-block;
+	cursor: pointer;
+	border: inherit;
+}
+.main_bar-entry:hover
+{
+	animation-name: bar_animation;
+	animation-duration: 500ms;
+	animation-fill-mode: forwards;
+}
+#content
+{
+	width: 100%;
+	float: left;
+	min-height: calc(100vh - 106px);
+}
+.mail
+{
+	text-align: left;
+	background-color: inherit;
+	color: #b1b1b1;
+	text-decoration: none;
+	margin: 0px 30px 0px 30px;
+	height: 50px;
+}
+.mail:hover
+{
+	color: white;
+}
+.footer
+{
+	width: 100%;
+	float: right;
+	background-color: #c40000;
+	color: white;
+	
+	line-height: 50px;
+}
+
+@media screen and (width < 1000px)
+{
+	.main_bar-image
+	{
+		padding: 10px 0px 10px 0px;
+		background-repeat: no-repeat;
+		background-position: center;
+		float: left;
+		background-image: url('https://storage.googleapis.com/red_eye_bit_studios-public/www/redeyebit-logo-1920.png');
+		width: 100%;
+		max-height: 40px;
+		background-color: white;
+		cursor: pointer;
+	}
+	.main_bar-content
+	{
+		width: 100%;
+		height: fit-content;
+		margin-top: 5px;
+		margin-bottom: 5px;
+
+		border-width: 0px;
+	}
+	.main_bar-entry
+	{
+		background-color: inherit;
+		color: inherit;
+		line-height: 50px;
+		padding: 0px;
+		width: 100%;
+		height: fit-content;
+		display: block;
+		border: inherit;
+	}
+	#content
+	{
+		min-height: calc(100vh - 320px);
+	}
+}

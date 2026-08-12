@@ -1,0 +1,67 @@
+<style>
+	#article_title
+	{
+		width: 100%;
+		float: left;
+		font-size: 34px;
+		color: #3c3c3c;
+		font-family: 'Space Grotesk';
+		font-weight: 800;
+		margin-bottom: 50px;
+	}
+	#article_date
+	{
+		width: 100%;
+		float: left;
+		font-size: 20px;
+	}
+	#article_text
+	{
+		width: 100%;
+		float: left;
+		margin-top: 20px;
+		color: #3c3c3c;
+	}
+	a, a:visited
+	{
+		font-weight: 400;
+		text-decoration: none;
+		color: cornflowerblue;
+	}
+</style>
+
+<textarea id="pl" style="display: none;">
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<title>Redona od teraz jest open source</title>
+	<TEXT-0>Od dzisiaj kod Redona Engine jest w pełni dostępny publicznie! Można go pobrać, skompilować czy przejrzeć - nie można jednak korzystać z niego w projektach komercyjnych. 
+	Do tego prawo ma tylko Red Eye Bit Studios i podmioty, które uzyskały na to zgodę.</TEXT-0>
+	<TEXT-1>Upubliczniony kod jest dostępny na platformie GitHub pod tym</TEXT-1>
+	<TEXT-2>linkiem</TEXT-2>
+</root>
+</textarea>
+
+<div style="margin-left: 10%; margin-right: 10%; width: 80%; margin-top: 110px; margin-bottom: 70px; float: left; height: 100%;">
+	<div id="article_date">30/07/2026</div>
+	<div id="article_title"></div>
+	<div id="article_text">
+		<span id="TEXT-0"></span><br /><br />
+		<span id="TEXT-1"></span> <a href="https://github.com/RedEyeBitStudios/redona" target="_blank" id="TEXT-2"></a>.
+	</div>
+</div>
+<script>
+	if (locale_dir.includes("pl"))
+	{
+		const xml_doc = $.parseXML($("#pl").text().toString());
+		const root = $($(xml_doc).children());
+		$("#article_title").text(root.find("title").text());
+
+		root.children().each(
+			function()
+			{
+				const id = $(this).prop("nodeName");
+				$("#" + id).text($(this).text());
+			}
+		)
+	}
+</script>

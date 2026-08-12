@@ -1,11 +1,56 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html>
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<link rel="shortcut icon" href="https://storage.googleapis.com/red_eye_bit_studios-public/www/redeyebit-icon.svg" type="image/x-icon">
+	<script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="locales/pl-PL/locale.xml" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Spline+Sans:wght@300..700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="index.css">
+	<script src="index.js"></script>
+	<title>Red Eye Bit Studios</title>
 </head>
 <body>
-	Work in progress.
+	<div class="main_bar">
+		<div class="main_bar-image" onclick="setContentPath('src/home.html')">
+			
+		</div>
+		<div class="main_bar-content">
+			<div class="main_bar-entry" id="home:PRODUCTS" onclick="setContentPath('src/redona_engine.html')">
+				
+			</div>
+			<!--
+			<div class="main_bar-entry" id="home:GAMES">
+				
+			</div>
+			<div class="main_bar-entry" id="home:SUPPORT">
+				
+			</div>
+			-->
+		</div>
+	</div>
+	<div id="content">
+
+	</div>
+	<div class="footer">
+		<div style="width: 100%; float: left; height: 50px; text-align: center;">
+			© 2026 RedEyeBit Studios
+		</div>
+		<div style="width: 100%; float: left; background-color: #3c3c3c;">
+			<a href="mailto:cppearl@redeyebit.com" class="mail">
+				E-Mail: cppearl@redeyebit.com
+			</a> 
+			<a href="https://github.com/RedEyeBitStudios" class="mail">GitHub</a>
+		</div>
+		
+		
+	</div>
+	<script>
+		loadContent("src/home.html");
+		
+	</script>
 </body>
 </html>

@@ -1,0 +1,148 @@
+<style>
+	.rebs_image
+	{
+		text-align: center;
+		height: 250px;
+		float: left;
+	}
+
+	.image
+	{
+		display: block;
+		float: left;
+	}
+	.texts
+	{
+		width: 40%;
+		margin-left: 5%;
+		margin-right: 5%;
+		float: left;
+	}
+
+	@media screen and (width < 1000px)
+	{
+		.image
+		{
+			display: none;
+		}
+		.texts
+		{
+			width: 90%;
+			margin-left: 5%;
+			margin-right: 5%;
+		}
+	}
+</style>
+<script src="articles.js"></script>
+<div style="width: 100%; color: #3c3c3c; font-family: 'Space Grotesk'; font-size: 34px; font-weight: 900; margin-top: 30px; float: left;">
+	<div style="text-align: center;" class="texts">
+		<div style="margin-top: 80px;" id="home:TITLE1">
+			
+		</div>
+		<div style="margin-top: 30px; color: #c40000; font-size: 25px; font-style: italic;" id="home:TITLE2">
+			
+		</div>
+	</div>
+	<div style="margin-left: 5%; width: 40%; text-align: center; height: 180px; margin-top: 40px;" class="image">
+		<div style="float: left; background-image: url('https://storage.googleapis.com/red_eye_bit_studios-public/www/redeyebit-logo-1920.png'); width: 100%; height: 100%; background-repeat: no-repeat;
+		background-position: center; background-size: contain;"></div>
+	</div>
+</div>
+<div style="width: 100%; float: left; margin-top: 130px; padding-top: 100px; padding-bottom: 120px; background-color: #202020; border-color: #c40000; border-style: solid; border-width: 2px 0px 0px 0px;">
+	<div style="width: 100%; text-align: center; color: #ff0000; font-weight: 200; font-size: 20px; margin-bottom: 10px;" id="home:SUBTITLE3"></div>
+	<div style="width: 100%; text-align: center; font-weight: 900; font-size: 36px; font-family: 'Space Grotesk';" id="home:TITLE3"></div>
+	<div style="margin: 0px 10% 0px 10%; width: 80%; text-align: center; font-weight: 100; font-size: 18px; margin-top: 20px;" id="home:DESCRIPTION3">
+		 
+	</div>
+</div>
+<div style="width: 100%; color: #3c3c3c; font-family: 'Space Grotesk'; font-size: 34px; font-weight: 900; margin-top: 100px; float: left; margin-bottom: 80px; text-align: center;">
+	<div style="margin-left: 5%; margin-right: 5%; width: 40%; text-align: center; height: 180px; margin-top: 40px;" class="image">
+		<div style="float: left; background-image: url('https://storage.googleapis.com/red_eye_bit_studios-public/www/redona-engine-full_logo-1280x640.png'); width: 100%; height: 100%; background-repeat: no-repeat;
+		background-position: center; background-size: contain;"></div>
+	</div>
+	<div style="text-align: center;" class="texts">
+		<div style="margin-top: 80px; color: #3c3c3c; font-size: 25px;" id="home:TITLE4">
+			
+		</div>
+		<div style="margin-top: 30px; color: #c40000; font-size: 25px; font-style: italic;" id="home:TITLE5">
+			
+		</div>
+	</div>
+	
+</div>
+<style>
+	@keyframes entry_animation
+	{
+		from
+		{
+			border-color: #c4000000;
+		}
+		to
+		{
+			border-color: #c40000ff;
+		}
+	}
+	.entry
+	{
+		flex: 0 0 auto;
+		max-width: 350px;
+		width: 100%;
+		height: 150px;
+		background-color: white;
+		border-color: #ff000000;
+		border-style: solid;
+		border-width: 0px 0px 12px 0px;
+		cursor: pointer;
+		color: #3c3c3c;
+		margin-bottom: 10px;
+	}
+	.entry:hover
+	{
+		animation-name: entry_animation;
+		animation-duration: 500ms;
+		animation-fill-mode: forwards;
+	}
+	.entry-date
+	{
+		margin-left: 5%;
+		margin-top: 5%;
+		width: 90%;
+		float: left;
+		font-size: 14px;
+		color: #5c5c5c;
+	}
+	.entry-title
+	{
+		margin-left: 5%;
+		width: 90%;
+		float: left;
+		font-weight: 700;
+		font-size: 22px;
+	}
+	.entry-check
+	{
+		margin-left: 5%;
+		margin-top: 5%;
+		width: 90%;
+		float: left;
+		font-size: 16px;
+		color: #c40000;
+	}
+</style>
+<div style="width: 100%; float: left; background-color: #202020; padding-top: 100px; padding-bottom: 100px; margin-top: 120px; border-color: #c40000; border-style: solid; border-width: 2px 0px 2px 0px;">
+	<div style="width: 70%; margin-left: 15%; margin-right: 15%; font-size: 34px; font-weight: 700; text-align: center; margin-bottom: 70px; float: left; font-family: 'Space Grotesk';" id="home:NEWS_TITLE">
+		
+	</div>
+	<div style="margin-left: 5%; margin-right: 5%; width: 90%; float: left; overflow-x:auto ; display: flex; gap: 25px;" id="home:NEWS">
+		<script>
+			fetchAndInsertArticles();
+		</script>
+	</div>
+</div>
+<div style="width: 100%; float: left; margin-top: 180px; margin-bottom: 160px;">
+	<div style="width: 100%; text-align: center; color: #ff0000; font-weight: 200; font-size: 20px; margin-bottom: 10px;" id="home:TITLE6"></div>
+	<div style="width: 100%; text-align: center; color: #3c3c3c; font-weight: 900; font-size: 36px; font-family: 'Space Grotesk';" id="home:TITLE7"></div>
+	<div style="margin: auto 20% auto 20%; width: 60%; text-align: center; color: #000000; font-weight: 100; font-size: 18px; margin-top: 20px;" id="home:TITLE8">
+		
+	</div>
+</div>
