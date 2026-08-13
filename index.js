@@ -48,7 +48,3 @@ async function loadContent(path)
 		}
 	);
 }
-async function setContentPath(path)
-{
-	await loadContent(path);
-}
