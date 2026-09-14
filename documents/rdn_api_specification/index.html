@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="https://storage.googleapis.com/red_eye_bit_studios-public/www/redona-engine-icon.svg" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="subpages/content_dictionary.html" crossorigin>
+	<script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inconsolata:wght@200..900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="index.css">
+	<title>Redona API reference</title>
+</head>
+<body>
+	<div id="bar">
+		<div style="width: 100%; text-align: center;">
+		<img src="https://storage.googleapis.com/red_eye_bit_studios-public/www/redona_api_reference_logo-2560x512.png" alt="" style="width: 400px; margin-top: 15px;">
+		</div>
+		<div id="navigation_menu">
+			<a href="index.html">
+				<div class="navigation_menu-entry">Home</div>
+			</a>
+			<a href="index.html?sub=content_dictionary">
+				<div class="navigation_menu-entry">Content dictionary</div>
+			</a>
+		</div>
+	</div>
+	<div id="content">
+		
+	</div>
+	<script>
+		function loadSubPage(subpage)
+		{
+			$("#content").load("subpages/" + subpage + ".html");
+		}
+		function showSubpage()
+		{
+			var urlParams = new URL($(location).attr('href')).searchParams;
+
+			if (urlParams.has("sub"))
+			{
+				loadSubPage(urlParams.get("sub"));
+			}
+			else
+			{
+				loadSubPage("home");
+			}
+		}
+
+		showSubpage();
+	</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<link rel="stylesheet" href="subpages/content_dictionary.css">
+<h1>Content dictionary</h1>
+<script>
+	$.get("content_dictionary.xml", 
+		function(xml_doc)
+		{
+			const root = xml_doc.firstElementChild;
+			const sections = $(root).children();
+			sections.each(
+				function()
+				{
+					let section = $("<h3>");
+					let section_title = $("<h4>");
+					section_title.text($(this).attr("name"));
+
+					section.append(section_title);
+					
+					const entries = $(this).children();
+					entries.each(
+						function()
+						{
+							const subpage = "sub=" + $(this).find("sub").text();
+							const data = "&data=" + $(this).find("data").text();
+
+							const entry = $("<a>");
+							entry.attr("href", "index.html?" + subpage + data);
+							entry.attr("target", "_blank");
+
+							const title = $("<h5>");
+							title.text($(this).attr("title"));
+
+							entry.append(title);
+							section.append(entry);
+						}
+					);
+
+					$("#content").append(section);
+				}
+			)
+		}
+	);
+</script>

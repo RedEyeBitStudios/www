@@ -36,7 +36,7 @@ async function fetchAndInsertArticles()
 		let base = document.createElement("div");
 		base.className = "entry";
 		$(base).on("click", () => {
-			setContentPath("data/articles/" + ids[i] + ".html")
+			loadContent("data/articles/" + ids[i] + ".html")
 		});
 
 		let date = document.createElement("div");

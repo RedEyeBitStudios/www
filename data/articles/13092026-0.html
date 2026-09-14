@@ -1,0 +1,147 @@
+<link rel="stylesheet" href="article.css">
+
+<style>
+	.subtitle
+	{
+		font-family: 'Science Gothic';
+		color: #3c3c3c;
+		width: 100%;
+		float: left;
+		font-weight: 400;
+		font-size: 27px;
+		margin-top: 50px;
+	}
+	code
+	{
+		color: #3a3a3a;
+		background-color: #e1e1e1;
+		border-radius: 6px;
+		border-width: 2px 4px;
+		border-style: solid;
+		border-color: #e1e1e1;
+		font-weight: 200;
+		font-family: 'Liberation Mono', monospace;
+		font-size: 15px;
+	}
+</style>
+
+<textarea id="pl" style="display: none;">
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<title>Rozwój postępuje: kamień milowy 0.0.1 osiągnięty</title>
+	<TEXT-0>ładowanie bibliotek dynamicznych</TEXT-0>
+	<TEXT-1>modyfikacja otwierania oraz interakcji z wejściem/wyjściem</TEXT-1>
+	<TEXT-2>wykonywanie operacji na plikach; rekomendowanym, bardziej przyjaznym dla użytkownika interfejsem niż</TEXT-2>
+	<TEXT-3>wczytywanie i zapisywanie plików INI, a konkretnie pliki konfiguracyjne</TEXT-3>
+	<TEXT-4>bardziej przyjazna dla użytkownika alternatywa</TEXT-4>
+	<TEXT-5>wczytywanie plików INI, a konkretnie pliki tłumaczeń językowych</TEXT-5>
+	<TEXT-6>logowanie do pliku. Możliwe opcje:</TEXT-6>
+	<TEXT-7>wymuszanie akceleracji sprzętowej. Możliwe opcje</TEXT-7>
+	<TEXT-8>renderowanie w trybie bezokiennym. Możliwe opcje</TEXT-8>
+	<TEXT-9>profil renderowania. Możliwe opcje</TEXT-9>
+	<TEXT-10>debugowanie grafiki. Możliwe opcje</TEXT-10>
+	<TEXT-11>Dodano</TEXT-11>
+	<TEXT-12>Dodano</TEXT-12>
+	<TEXT-13>Zarezerwowane dla kodów błędów silnika</TEXT-13>
+	<TEXT-14>Zarezerwowane dla kodów błędów aplikacji</TEXT-14>
+	<TEXT-15>Zarezerwowane dla tłumaczeń językowych silnika</TEXT-15>
+	<TEXT-16>Zarezerwowane dla tłumaczeń językowych aplikacji</TEXT-16>
+	<TEXT-17>informacje ogólne nt. aplikacji</TEXT-17>
+	<TEXT-18>reprezentuje aplikację</TEXT-18>
+	<TEXT-19>interfejs globalny dla aplikacji</TEXT-19>
+	<TEXT-20>logika inicjacji dla aplikacji</TEXT-20>
+	<TEXT-21>informacje ogólne silnika</TEXT-21>
+	<TEXT-22>informacje ogólne aplikacji</TEXT-22>
+	<TEXT-23>zapytanie o zakończenie działania aplikacji</TEXT-23>
+	<TEXT-24>język tłumaczenia preferowany przez użytkownika</TEXT-24>
+	<TEXT-25>zainstalowane języki tłumaczenia</TEXT-25>
+	<TEXT-26>ustawia język tłumaczenia</TEXT-26>
+	<TEXT-27>zapytanie o indeksowane tłumaczenie językowe</TEXT-27>
+	<TEXT-28>wewnętrzne zmienne globalne aplikacji</TEXT-28>
+	<TEXT-29>interfejs komunikacji aplikacji z grafiką</TEXT-29>
+	<TEXT-30>interfejs tłumaczeń językowych</TEXT-30>
+	<TEXT-31>obsługa wyjścia aplikacji</TEXT-31>
+	<TEXT-32>baza podręczna wczytanej konfiguracji</TEXT-32>
+	<TEXT-33>RDN API zyskało nowe narzędzia</TEXT-33>
+	<TEXT-34>... i nie tylko</TEXT-34>
+	<TEXT-35>Nowe opcje konfiguracyjne</TEXT-35>
+	<TEXT-36>Tłumaczenia językowe</TEXT-36>
+	<TEXT-37>Definicja puli dla tłumaczeń językowych</TEXT-37>
+	<TEXT-38>Interfejsy wewnętrzne</TEXT-38>
+</root>
+</textarea>
+
+<div style="margin-left: 10%; margin-right: 10%; width: 80%; margin-top: 110px; margin-bottom: 70px; float: left; height: 100%;">
+	<div id="article_date">13/09/2026</div>
+	<div id="article_title"></div>
+	
+	<div class="subtitle" style="margin-top: 0px;" id="TEXT-33"></div>
+	<div class="article_text">
+		<code>class Plugin</code> <span id="TEXT-0"></span>.<br />
+		<code>enum class E_ModeIO</code> <span id="TEXT-1"></span>.<br />
+		<code>class FileView</code><br />
+		<code>class FileDescriptor</code> <span id="TEXT-2"></span> <code>std::fstream</code>.<br />
+		<code>class ConfigINI</code> <span id="TEXT-3"></span>.<br />
+		<code>class Exception</code> <span id="TEXT-4"></span> <code>std::runtime_error</code>.<br />
+		<code>class Locale</code> <span id="TEXT-5"></span>.<br />
+	</div>
+	<div class="subtitle" id="TEXT-34"></div>
+	<div class="article_text">
+		<code>struct IF_MetaInfo</code> <span id="TEXT-17"></span><br />
+		<code>class AppInstance</code> <span id="TEXT-18"></span><br />
+		<code>class I_Globals</code> <span id="TEXT-19"></span><br />
+		<code>AppInstance::startup</code> <span id="TEXT-20"></span><br />
+		<code>I_Globals::engineMetaInfo</code> <span id="TEXT-21"></span><br />
+		<code>I_Globals::appMetaInfo</code> <span id="TEXT-22"></span><br />
+		<code>I_Globals::requestQuit</code> <span id="TEXT-23"></span><br />
+		<code>I_Globals::localeUserPreferred</code> <span id="TEXT-24"></span><br />
+		<code>I_Globals::localeInstalled</code> <span id="TEXT-25"></span><br />
+		<code>I_Globals::localeSet</code> <span id="TEXT-26"></span><br />
+		<code>I_Globals::localeQuery</code> <span id="TEXT-27"></span><br />
+	</div>
+	<div class="subtitle" id="TEXT-35"></div>
+	<div class="article_text">
+		<code>engine.log.file</code> <span id="TEXT-6"></span> <code>true</code>/<code>false</code><br />
+		<code>engine.graphics.force_hardware</code> <span id="TEXT-7"></span>: <code>true</code>/<code>false</code><br />
+		<code>engine.graphics.offscreen</code> <span id="TEXT-8"></span>: <code>true</code>/<code>false</code><br />
+		<code>engine.graphics.profile</code> <span id="TEXT-9"></span>: <code>vulkan</code><br />
+		<code>engine.graphics.debug_mode</code> <span id="TEXT-10"></span>: <code>true</code>/<code>false</code><br />
+	</div>
+	<div class="subtitle" id="TEXT-36"></div>
+	<div class="subtitle" style="font-size: 16px; margin-top: 0px;">pl_PL</div>
+	<div class="article_text">
+		<span id="TEXT-11"></span> <code>1-2</code><br />
+		<span id="TEXT-12"></span> <code>1536-1539</code><br />
+	</div>
+	<div class="subtitle" id="TEXT-37"></div>
+	<div class="article_text">
+		<code>1-255</code> <span id="TEXT-13"></span>.<br />
+		<code>256-1535</code> <span id="TEXT-14"></span>.<br />
+		<code>1536-4095</code> <span id="TEXT-15"></span>.<br />
+		<code>4096-32767</code> <span id="TEXT-16"></span>.
+	</div>
+	<div class="subtitle" id="TEXT-38"></div>
+	<div class="article_text">
+		<code>class AppData</code> <span id="TEXT-28"></span><br />
+		<code>class Graphics</code> <span id="TEXT-29"></span><br />
+		<code>class LocaleData</code> <span id="TEXT-30"></span><br />
+		<code>class Output</code> <span id="TEXT-31"></span><br />
+		<code>class SettingsCache</code> <span id="TEXT-32"></span><br />
+	</div>
+</div>
+<script>
+	if (locale_dir.includes("pl"))
+	{
+		const xml_doc = $.parseXML($("#pl").text().toString());
+		const root = $($(xml_doc).children());
+		$("#article_title").text(root.find("title").text());
+
+		root.children().each(
+			function()
+			{
+				const id = $(this).prop("nodeName");
+				$("#" + id).text($(this).text());
+			}
+		)
+	}
+</script>

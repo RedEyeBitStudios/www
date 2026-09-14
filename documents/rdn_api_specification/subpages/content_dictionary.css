@@ -1,0 +1,32 @@
+h3
+{
+	font-family: 'Inter Tight';
+	
+	color: #555555;
+}
+h4
+{
+	font-family: 'Inter Tight';
+	font-weight: 500;
+	font-size: 18pt;
+}
+h5
+{
+	padding: 4px;
+	padding-left: 6px;
+	margin: 0px;
+	margin-left: 20px;
+	font-weight: 400;
+	font-size: 14pt;
+	color: #555555;
+	border-color: #ff000000;
+	border-style: solid;
+	border-width: 0px 0px 2px 0px;
+	max-width: 80%;
+	min-width: 350px;
+}
+h5:hover
+{
+	color: red;
+	border-color: #ff0000ff;
+}

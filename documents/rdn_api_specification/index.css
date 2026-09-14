@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inconsolata:wght@200..900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Science+Gothic:wght@100..900&display=swap');
+
+body
+{
+	margin: 0px;
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	scrollbar-width: thin;
+	height: max-content;
+	color: #000000;
+
+	font-family: 'Inter Tight', sans-serif;
+	font-size: 13pt;
+	font-weight: 200;
+
+	-webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+#bar
+{
+	width: 100%;
+	height: fit-content;
+
+	box-shadow: 0px 0px 10px #6b6b6b;
+	margin-bottom: 20px;
+	color: #a7a7a7;
+}
+#navigation_menu
+{
+	width: fit-content;
+	height: 50px;
+	text-align: center;
+	font-weight: 300;
+	font-size: 21px;
+	margin: auto;
+	margin-top: 15px;
+}
+.navigation_menu-entry
+{
+	float: left;
+	padding: 5px 10px 5px 10px;
+	cursor: pointer;
+	border-style: solid;
+	border-color: #c4000000;
+	border-width: 0px 0px 3px 0px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.navigation_menu-entry:hover
+{
+	color: #c40000;
+	border-color: #c40000ff;
+}
+#content
+{
+	height: calc(100vh - 210px);
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	width: 900px;
+	margin-top: 50px;
+	font-size: 13pt;
+	overflow-y: scroll;
+}
+
+h1
+{
+	font-family: 'Google Sans';
+	font-size: 26pt;
+	text-align: left;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+h2
+{
+	font-family: 'Inter Tight';
+	font-size: 20pt;
+	font-weight: 400;
+}
+code
+{
+	font-family: 'Inconsolata';
+	font-size: inherit;
+	font-weight: 400;
+}
+a, a:visited
+{
+	color: inherit;
+	text-decoration: inherit;
+}

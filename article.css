@@ -1,0 +1,32 @@
+#article_title
+	{
+		width: 100%;
+		float: left;
+		font-size: 34px;
+		color: #3c3c3c;
+		font-family: 'Science Gothic';
+		font-weight: 500;
+		margin-bottom: 50px;
+	}
+	#article_date
+	{
+		width: 100%;
+		float: left;
+		font-size: 20px;
+	}
+.article_text
+	{
+		width: 100%;
+		float: left;
+		font-weight: 200;
+		font-size: 17px;
+		margin-top: 20px;
+		line-height: 26px;
+		color: #3c3c3c;
+	}
+	a, a:visited
+	{
+		font-weight: 400;
+		text-decoration: none;
+		color: cornflowerblue;
+	}
