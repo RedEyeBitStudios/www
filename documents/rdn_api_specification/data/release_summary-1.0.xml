@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<provide>
+		<def>App</def>
+		<def>ArenaID</def>
+		<def>C_ComponentT</def>
+		<def>C_InstanceT</def>
+		<def>ComponentID</def>
+		<def>E_EntityProperty</def>
+		<def>E_FailureCode</def>
+		<def>EntityID</def>
+		<def>I_App</def>
+		<def>I_HeapCPU</def>
+		<def>IF_Instance</def>
+	</provide>
+	<modify>
+
+	</modify>
+	<deprecate>
+
+	</deprecate>
+</root>

@@ -56,42 +56,6 @@
 		float: left;
 		width: 50%;
 	}
-	@keyframes download_button_animation
-	{
-		from
-		{
-			background-color: inherit;
-			color: #b1b1b1;
-		}
-		to
-		{
-			background-color: #c40000;
-			color: white;
-		}
-	}
-	.download_category
-	{
-		width: 25%;
-		float: left;
-		border-color: #b1b1b1;
-		border-style: solid;
-		border-width: 0px 0px 0px 2px;
-		border-collapse: collapse;
-	}
-	.download_button, .download_button:visited
-	{
-		background-color: inherit;		
-		color: #b1b1b1;
-		font-weight: 500;
-		cursor: pointer;
-		text-decoration: none;
-	}
-	.download_button:hover
-	{
-		animation-name: download_button_animation;
-		animation-duration: 500ms;
-		animation-fill-mode: forwards;
-	}
 	@media screen and (width < 1000px)
 	{
 		#redona_logo
@@ -121,6 +85,13 @@
 	{
 		display: block;
 	}
+	.subtitle
+	{
+		width: 100%;
+		font-family: 'Science Gothic';
+		font-weight: 400;
+		float: left;
+	}
 </style>
 
 
@@ -130,7 +101,7 @@
 <div id="desc">
 	<span style="float: left;" id="redona_engine:DESCRIPTION1"></span><br />
 	<div id="pros">
-		<span style="width: 100%; font-family: 'Space Grotesk'; font-weight: 700; font-size: 21px; margin-top: 20px; float: left;" id="redona_engine:SUBTITLE1"></span><br /><br />
+		<span style=" font-size: 21px; margin-top: 20px;" id="redona_engine:SUBTITLE1" class="subtitle"></span><br /><br />
 		<ul style="float: left;">
 			<li id="redona_engine:TEXT1"></li>
 			<li id="redona_engine:TEXT2"></li>
@@ -160,6 +131,34 @@
 			float: left;
 			line-height: 55px;
 		}
+		.download-entry, .download_link
+		{
+			font-family: 'Science Gothic';
+			color: inherit;
+			text-decoration: none;
+			font-weight: 400;
+		}
+		.download-entry:hover
+		{
+			color: #c40000;
+		}
+		.download_link
+		{
+			width: fit-content;
+			float: left;
+			margin: 0px 35px 0px 35px;
+		}
+		.download_link > div
+		{
+			width: fit-content;
+			text-align: center;
+			float: none;
+		}
+		.download-img
+		{
+			height: 50px;
+			float: none;
+		}
 		@media screen and (width < 1000px)
 		{
 			.os_entry-text
@@ -179,13 +178,14 @@
 		}
 	</style>
 	<div id="pros">
-		<div style="width: 100%; font-family: 'Space Grotesk'; font-weight: 700; font-size: 21px; margin-top: 20px; float: left; margin-bottom: 20px;">Obsługiwane systemy operacyjne</div>
+		<div style="font-size: 21px; margin-top: 20px;margin-bottom: 20px;" class="subtitle">Obsługiwane systemy operacyjne</div>
 		<div class="os_entry">
 			<img src="https://storage.googleapis.com/red_eye_bit_studios-public/www/linux-logo-512x512.png" alt="" class="os_entry-img">
 			<div class="os_entry-text">
 				GNU/Linux; glibc 2.39 <span id="redona_engine:TEXT7"></span>
 			</div>
 		</div>
+		<!--
 		<div class="os_entry">
 			<img src="https://storage.googleapis.com/red_eye_bit_studios-public/www/windows-logo-512x512.png" alt="" class="os_entry-img">
 			<div class="os_entry-text">
@@ -198,10 +198,11 @@
 				Android 10.0 <span id="redona_engine:TEXT9"></span>
 			</div>
 		</div>
+		-->
 	</div>
 </div>
 <div id="requirements">
-	<div style="width: 100%; font-family: 'Space Grotesk'; font-weight: 700; font-size: 21px; margin-bottom: 20px; text-align: center; color: white;">Wymagania sprzętowe</div>
+	<div style="font-size: 21px; margin-bottom: 20px; text-align: center; color: white;" class="subtitle">Wymagania sprzętowe</div>
 
 	<table>
 		<tr>
@@ -244,37 +245,51 @@
 		</tr>
 	</table>
 </div>
-<div style="margin-top: 70px; width: 100%; float: left; color: #3c3c3c; margin-bottom: 70px;" id="downloads">
-	<div style="float: left; width: 100%; font-family: 'Space Grotesk'; font-weight: 700; font-size: 21px; margin-bottom: 40px; text-align: center;">Pobieranie</div>
-	<div style="float: left; width: 80%; margin-left: 10%; display: flex; text-align: center; background-color: #3c3c3c; padding-top: 20px; ">
-		
-			<div style="width: 50%; float: left; height: 120px; line-height: 120px;" class="download_button">
-				<a href="https://github.com/RedEyeBitStudios/redona" target="_blank" style="color: inherit; text-decoration: none;">
-					GitHub
+<div style="width: 100%; float: left; text-align: center; margin-top: 50px; margin-bottom: 30px; color: #3c3c3c;" id="downloads">
+	<div class="subtitle" style="font-size: 21px;  margin-bottom: 30px;">Pobieranie</div>
+	<div style="width: 290px; margin: auto; text-align:">
+		<a href="https://github.com/RedEyeBitStudios/redona" target="_blank" class="download_link">
+			<div>
+				<img src="https://storage.googleapis.com/red_eye_bit_studios-public/www/github-512x512.png" alt="" class="download-img">
+				<div style="margin-top: 25px;" class="download-entry">
+					Noarch
+				</div>
+			</div>
+		</a>
+		<div style="color: inherit;
+			text-decoration: none;
+			font-weight: 400;
+			font-family: 'Science Gothic';
+			width: fit-content;
+			float: left;
+			margin: 0px 35px 0px 35px;">
+			<div>
+				<img src="https://storage.googleapis.com/red_eye_bit_studios-public/www/linux-logo-512x512.png" alt="" class="download-img">
+				<a href="https://github.com/RedEyeBitStudios/redona" target="_blank" style="text-decoration: none; color: inherit;">
+					<div style="margin-top: 10px;" class="download-entry">x86_64</div>
 				</a>
-			</div>
-		<div style="width: 50%;">
-			<img src="https://storage.googleapis.com/red_eye_bit_studios-public/www/linux-logo-512x512.png" alt="" style="float: left; width: 40px; margin-left: calc((100% - 40px) / 2); padding-bottom: 20px;">
-			<div style="float: left; width: 50%; height: 60px; line-height: 60px;" class="download_button">
-				x86_64
-			</div>
-			<div style="float: left; width: 50%; height: 60px; line-height: 60px;" class="download_button">
-				aarch64
+				<a href="https://github.com/RedEyeBitStudios/redona" target="_blank" style="text-decoration: none; color: inherit;">
+					<div style="margin-top: 10px;" class="download-entry">aarch64</div>
+				</a>
 			</div>
 		</div>
 		<!--
-		<div class="download_category">
-			<img src="https://storage.googleapis.com/red_eye_bit_studios-public/www/windows-logo-512x512.png" alt="" style="float: left; width: 40px; margin-left: calc((100% - 40px) / 2); padding-bottom: 20px;">
-			<div style="float: left; width: 100%; height: 60px; line-height: 60px;" class="download_button">
-				x86_64
+		<a href="" target="_blank" class="download_link">
+			<div>
+				<img src="https://storage.googleapis.com/red_eye_bit_studios-public/www/windows-logo-512x512.png" alt="" class="download-img">
+				<div style="margin-top: 25px;" class="download-entry">
+					x86_64
+				</div>
 			</div>
-		</div>
-		<div class="download_category">
-			<img src="https://storage.googleapis.com/red_eye_bit_studios-public/www/android-logo-512x512.png" alt="" style="float: left; width: 40px; margin-left: calc((100% - 40px) / 2); padding-bottom: 20px;">
-			<div style="float: left; width: 100%; height: 60px; line-height: 60px;" class="download_button">
-				aarch64
+		</a>
+		<a href="" target="_blank" class="download_link">
+			<div>
+				<img src="https://storage.googleapis.com/red_eye_bit_studios-public/www/android-logo-512x512.png" alt="" class="download-img">
+				<div style="margin-top: 25px;" class="download-entry">
+					aarch64
+				</div>
 			</div>
-		</div>
+		</a>
 		-->
 	</div>
 </div>

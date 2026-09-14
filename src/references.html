@@ -1,0 +1,69 @@
+<style>
+	#support_section
+	{
+		width: 100%;
+		float: left;
+		font-size: 34px;
+		color: #3c3c3c;
+		font-family: 'Science Gothic';
+		font-weight: 100;
+		margin-bottom: 20px;
+	}
+	@keyframes support_animation
+	{
+		from
+		{
+			border-color: inherit;
+			color: inherit;
+		}
+		to
+		{
+			border-color: #ff0000ff;
+			color: #c40000;
+		}
+	}
+	.support_entry
+	{
+		float: left;
+		width: 100%;
+		font-weight: 300;
+		text-decoration: none;
+		color: #3c3c3c;
+		font-size: 28px;
+		margin-left: 10px;
+		padding-left: 10px;
+		margin-bottom: 10px;
+
+		border-style: solid;
+		border-width: 0px 0px 3px 0px;
+		border-color: #ff000000;
+	}
+	.support_entry:hover
+	{
+		animation-name: support_animation;
+		animation-duration: 500ms;
+		animation-fill-mode: forwards;
+	}
+	.support_cat
+	{
+		float: left;
+		width: 100%;
+		font-size: 38px;
+		margin-bottom: 30px;
+		font-family: "Google Sans";
+		font-weight: 700;
+	}
+</style>
+
+<div style="margin-left: 10%; margin-right: 10%; width: 80%; margin-top: 110px; margin-bottom: 70px; float: left; height: 100%;">
+	<div id="support_section">
+		<div class="support_cat">Dokumenty referencyjne</div>
+		<a href="../documents/rdn_api_specification/index.html" class="support_entry" target="_blank">
+			Redona API
+		</a>
+		<a href="" class="support_entry">
+			Redona manual
+		</a>
+		
+	</div>	
+</div>

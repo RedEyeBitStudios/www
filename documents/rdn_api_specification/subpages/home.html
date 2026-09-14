@@ -1,0 +1,77 @@
+<h1>Redona API specification</h1>
+<span style="font-weight: 200; font-size: 13pt; color: #999999;">17/08/2026</span><br />
+<span style="font-size: 17pt; font-weight: 500;">Version 1.0</span><br style="line-height: 8;" />
+<span style="font-size: 17pt; font-weight: 300;">&copy; Red Eye Bit Studios</span><br style="line-height: 4;" /><br style="line-height: 6;" />
+This reference describes the API of Redona Engine, referred to as RDN API. Written in C++26 it allows the application developer to interact with the mentioned earlier engine. RDN API is part of Redona SDK.
+<h2>Name prefixes</h2>
+<table>
+	<tr>
+		<td style="width: 110px;"><code>I_</code></td>
+		<td>
+			<span style="font-weight: 400;">Interface</span><br />
+			Interface class that provides some logic.
+		</td>
+	</tr>
+	<tr>
+		<td><code>E_</code></td>
+		<td>
+			<span style="font-weight: 400;">Enumeration</span><br />
+			This is as simple as a regular <code>enum/enum class</code> in standard C++.
+		</td>
+	</tr>
+	<tr>
+		<td><code>C_</code></td>
+		<td>
+			<span style="font-weight: 400;">Concept</span><br />
+			This is as simple as a regular <code>concept</code> in standard C++.
+		</td>
+	</tr>
+	<tr>
+		<td><code>IF_</code></td>
+		<td>
+			<span style="font-weight: 400;">Info</span><br />
+			Structure that contains data only. Designated initializer guaranteed.
+		</td>
+	</tr>
+</table><br style="line-height: 3;" />
+<h2>Namespaces</h2>
+All symbols are defined in the <code>rdn</code> namespace. Exceptions here are preprocessor macros which start with <code>RDN_</code> prefix. Application dedicated namespace is <code>app</code>.
+<h2>In code name casing</h2>
+<table>
+	<tr>
+		<td style="width: 150px;"><code>snake_case</code></td>
+		<td style="padding: 15px;">
+			- variables<br />
+			- function arguments (even if they are <code>const</code> qualified)<br />
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 150px;"><code>PascalCase</code></td>
+		<td style="padding: 15px;">
+			- every <code>struct</code><br />
+			- every <code>class</code><br />
+			- every <code>enum</code><br />
+			- every <code>enum class</code><br />
+			- every <code>concept</code><br />
+			- every type alias
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 150px;"><code>UPPER_CASE</code></td>
+		<td style="padding: 15px;">
+			- compile-time constants<br />
+			- <code>enum/enum class</code> values<br />
+			- preprocessor macros<br />
+			- <code>template</code> arguments
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 150px;"><code>camelCase</code></td>
+		<td style="padding: 15px;">
+			- function<br />
+			- lambda<br />
+			- <code>class</code> function member (excepting destructor and constructors)
+		</td>
+	</tr>
+</table>
+<div style="height: 50px; width: 100%;"></div>

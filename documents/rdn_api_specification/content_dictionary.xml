@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<section name="Overview">
+		<entry title="Release summary - 1.0">
+			<sub>summary</sub>
+			<data>release_summary-1.0</data>
+		</entry>
+	</section>
+	<section name="Uncategorized">
+		<entry title="App">
+			<sub>class</sub>
+			<data>class_app</data>
+		</entry>
+		<entry title="ArenaID">
+			<sub>class</sub>
+			<data>class_arenaid</data>
+		</entry>
+		<entry title="C_ComponentT">
+			<sub>concept</sub>
+			<data>concept_componentt</data>
+		</entry>
+		<entry title="C_InstanceT">
+			<sub>concept</sub>
+			<data>concept_instancet</data>
+		</entry>
+		<entry title="ComponentID">
+			<sub>class</sub>
+			<data>class_componentid</data>
+		</entry>
+		<entry title="E_EntityProperty">
+			<sub>enum_class</sub>
+			<data>enum_class_entityproperty</data>
+		</entry>
+		<entry title="E_FailureCode">
+			<sub>enum_class</sub>
+			<data>enum_class_failurecode</data>
+		</entry>
+		<entry title="EntityID">
+			<sub>class</sub>
+			<data>class_entityid</data>
+		</entry>
+		<entry title="I_App">
+			<sub>class</sub>
+			<data>class_i_app</data>
+		</entry>
+		<entry title="I_HeapCPU">
+			<sub>class</sub>
+			<data>class_i_heapcpu</data>
+		</entry>
+		<entry title="IF_Instance">
+			<sub>struct</sub>
+			<data>struct_if_instance</data>
+		</entry>
+	</section>
+	<section name="Methods">
+		<entry title="App::Constructor()">
+			<sub>function</sub>
+			<data>app-constructor</data>
+		</entry>
+		<entry title="App::Destructor()">
+			<sub>function</sub>
+			<data>app-destructor</data>
+		</entry>
+		<entry title="I_App::log()">
+			<sub>function</sub>
+			<data>i_app-log</data>
+		</entry>
+		<entry title="I_App::makeAddressNamed()">
+			<sub>function</sub>
+			<data>i_app-makeaddressnamed</data>
+		</entry>
+		<entry title="I_App::quit()">
+			<sub>function</sub>
+			<data>i_app-quit</data>
+		</entry>
+	</section>
+</root>
